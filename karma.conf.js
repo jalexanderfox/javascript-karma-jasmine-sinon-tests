@@ -23,9 +23,12 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      "node_modules/jasmine-sinon/lib/*", // add jasmine-sinon
+      "bower_components/jquery/dist/jquery.js", // add jquery
       "app/**/*.js",
       "public/**/*.js",
-      "test/*.js"
+      "test/*Spec.js",
+      "test/jasmine-sinon-introduction.js"
     ],
 
     // list of files / patterns to exclude
@@ -53,8 +56,8 @@ module.exports = function(config) {
       "karma-phantomjs-launcher",
       "karma-chrome-launcher",
       "karma-jasmine",
-      "karma-sinon",
-      "karma-requirejs"
+      "karma-sinon"
+      // "karma-requirejs"
     ],
 
     // Continuous Integration mode
