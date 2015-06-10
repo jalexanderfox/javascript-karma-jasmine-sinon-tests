@@ -21,6 +21,8 @@ module.exports = function(config) {
       // ,"requirejs"
     ],
 
+    reporters: ['mocha'],
+
     // list of files / patterns to load in the browser
     files: [
       "node_modules/jasmine-sinon/lib/*", // add jasmine-sinon
@@ -56,7 +58,8 @@ module.exports = function(config) {
       "karma-phantomjs-launcher",
       "karma-chrome-launcher",
       "karma-jasmine",
-      "karma-sinon"
+      "karma-sinon",
+      "karma-mocha-reporter"
       // "karma-requirejs"
     ],
 
