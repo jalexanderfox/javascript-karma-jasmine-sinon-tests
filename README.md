@@ -7,5 +7,5 @@ npm install -g karma-cli
 
 npm install
 
-karma karma-conf.js
+karma karma.conf.js
 ```
